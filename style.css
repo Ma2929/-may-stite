@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.landing {
+    height: 100vh;
+    position: relative; /* Ensure positioning context for the pseudo-element */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pseudo-element for blurred background */
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images4.alphacoders.com/628/628354.jpg');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Adjust blur level */
+    z-index: 0; /* Place it behind the content */
+    /* Remove border, margin, or padding issues */
+    border: none; /* Ensure no borders are added */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+/* Ensure content appears above the blurred background */
+.enter-button {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Ensure it appears above the pseudo-element */
+}
+
+.enter-button:hover {
+    color: #858585;
+    transform: scale(0.5);
+}
+
+/* Profile Page */
+.profile-container {
+    height: 100vh;
+    background-image: url('https://images4.alphacoders.com/628/628354.jpg'); /* Use the same background as the landing page */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    color: white;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-color: gray; /* fallback color */
+    background-image: url('https://i.pinimg.com/564x/98/35/ce/9835ce91a1648977bb0bc175ee144957.jpg'); /* Replace with the actual avatar URL */
+    background-size: cover; /* ensures the image covers the entire area */
+    background-position: center; /* centers the image */
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+.additional-badges {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between badges */
+}
+
+.additional-badge {
+    position: relative;
+}
+
+.additional-badge img {
+    width: 40px; /* Adjust size if necessary */
+    height: 40px; /* Adjust size if necessary */
+    border-radius: 10%;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+p2 {
+    font-size: 1rem;
+}
+p3 {
+    font-size: 0.8rem;
+}
+.spacer {
+    height: 30px; /* Adjust this value to control the spacing */
+}
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between badges */
+}
+
+.badge-item {
+    text-align: center;
+}
+
+.badge-item img {
+    width: 80px; /* Adjust size if necessary */
+    height: 80px; /* Adjust size if necessary */
+    border-radius: 10px;
+}
+
+.badge-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+/* Hover and Animation */
+.profile-box:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}

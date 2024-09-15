@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Guns.lol Replica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-box">
+            <div class="profile-pic-container">
+                <div class="profile-pic" id="profilePic"></div>
+                <div class="additional-badges">
+                    <div class="additional-badge">
+                        <img src="https://cdn3.emoji.gg/emojis/1518-valorant-immortal-1.png" alt="Additional Badge 1">
+                    </div>
+                    <div class="additional-badge">
+                        <img src="https://cdn3.emoji.gg/emojis/6440-unreal.png" alt="Additional Badge 2">
+                    </div>
+                    <div class="additional-badge">
+                        <img src="https://cdn3.emoji.gg/emojis/8361-evolving-badge-nitro-9-months.png" alt="Additional Badge 2">
+                    </div>
+                </div>
+            </div>
+            <h1>The Spirit of </h1>
+            <p>May Says</p>
+            <p2>Happiness is not something ready made. It comes from your own actions</p2>
+            <p class="spacer"></p>
+            <p3>Sometimes, being a solo player is not about playing alone, but about mastering your own strengths and finding your path in a world that’s uniquely yours</p3>
+            <div class="badges">
+                <div class="badge-item">
+                    <a href="https://discord.gg/9HNXvDSNCc" target="_blank" onclick="playSound('badgeSound1')">
+                        <img src="https://cdn3.emoji.gg/emojis/8916-shoppingcart.png" alt="Badge 1">
+                    </a>
+                    <p class="badge-text">Friend Store</p>
+                </div>
+                <div class="badge-item">
+                    <a href="https://discord.gg/km1" target="_blank" onclick="playSound('badgeSound2')">
+                        <img src="https://cdn3.emoji.gg/emojis/8916-shoppingcart.png" alt="Badge 2">
+                    </a>
+                    <p class="badge-text">Km store</p>
+                </div>
+                <div class="badge-item">
+                    <a href="https://discord.gg/887" target="_blank" onclick="playSound('badgeSound3')">
+                        <img src="https://cdn3.emoji.gg/stickers/69622-what.png" alt="Badge 3">
+                    </a>
+                    <p class="badge-text">𝐃𝐚𝐫𝐤𝐧𝐞𝐬𝐬 Server</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="badgeSound1" src="https://cdn.discordapp.com/attachments/1279462193980772442/1284804651333451857/mixkit-mouse-click-close-1113.wav?ex=66e7f713&is=66e6a593&hm=93360ba4e0a7b11a9443c9da9b1bfa007409511e4c604188e6ff4a731b7575d7&"></audio>
+    <audio id="badgeSound2" src="https://cdn.discordapp.com/attachments/1279462193980772442/1284804651333451857/mixkit-mouse-click-close-1113.wav?ex=66e7f713&is=66e6a593&hm=93360ba4e0a7b11a9443c9da9b1bfa007409511e4c604188e6ff4a731b7575d7&"></audio>
+    <audio id="badgeSound3" src="https://cdn.discordapp.com/attachments/1279462193980772442/1284804651333451857/mixkit-mouse-click-close-1113.wav?ex=66e7f713&is=66e6a593&hm=93360ba4e0a7b11a9443c9da9b1bfa007409511e4c604188e6ff4a731b7575d7&"></audio>
+
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1279462193980772442/1284805960610742354/utomp3_mp3cut.net.mp3?ex=66e7f84b&is=66e6a6cb&hm=623ac2306ee30cae6fc9aac2bd4dae0f56b9667357f5683b6906734afaa86e89&" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playSound(soundId) {
+            var sound = document.getElementById(soundId);
+            sound.play();
+        }
+    </script>
+</body>
+</html>
